@@ -10,15 +10,12 @@ submits a number less than or equal to zero.
 
 num_int = int(input("Input a number: "))    # Do not change this line
 # Fill in the missing code
-
+max_int = num_int
 
 while num_int > 0:
-    #num_int = int(input("Input a number: "))    # Do not change this line
-    max_int = num_int
-    if max_int > num_int:
-       print(max_int)
-    elif max_int < num_int:
+    if max_int < num_int:
         max_int = num_int
-        print(max_int)    # Do not change this line
+        #print(max_int)    # Do not change this line
+    num_int = int(input("Input a number: "))    # Do not change this line
 if num_int <= 0:
     print("The maximum is", max_int)
